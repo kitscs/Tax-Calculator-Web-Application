@@ -1,0 +1,148 @@
+@charset "ISO-8859-1";
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	color: black;
+	background-color: RGBa(204, 204, 204, 0.5);
+}
+
+h2, h3 {
+	text-align: center;
+	color: #CC6666;
+}
+
+#buttons {
+	text-align: center;
+}
+
+/* STRUCTURE */
+#pagewrap {
+	padding: 5px;
+	width: 80%;
+	margin: 20px auto;
+}
+
+header {
+	height: 50%;
+	text-align: center;
+	padding: 5px;
+	color: white;
+	background-color: #3399CC;
+}
+
+main {
+	background-color: white;
+}
+
+#summary {
+	width: 99%;
+	background-color: white;
+	padding: 2px 5px 2px 5px;
+	margin: 5px 0px 10px 0px;
+}
+
+#content_left {
+	width: 29%;
+	float: left;
+	padding: 5px 15px;
+	background-color: white;
+}
+
+#middle {
+	width: 31.9%; /* Account for margins + border values */
+	float: left;
+	padding: 5px 15px;
+	margin: 0px 5px 5px 5px;
+	background-color: white;
+}
+
+#content_right {
+	width: 29%;
+	padding: 5px 15px;
+	float: right;
+	background-color: white;
+}
+
+footer {
+	clear: both;
+	text-align: center;
+	color: white;
+	background-color: #3399CC;
+}
+
+/************************************************************************************
+MEDIA QUERIES
+*************************************************************************************/
+/* for 980px or less */
+@media screen and (max-width: 980px) {
+	#pagewrap {
+		width: 94%;
+	}
+	#content {
+		width: 41%;
+		padding: 1% 4%;
+	}
+	#middle {
+		width: 41%;
+		padding: 1% 4%;
+		margin: 0px 0px 5px 5px;
+		float: right;
+	}
+	#sidebar {
+		clear: both;
+		padding: 1% 4%;
+		width: auto;
+		float: none;
+	}
+	header, footer {
+		padding: 1% 4%;
+	}
+}
+
+/* for 700px or less */
+@media screen and (max-width: 600px) {
+	#content {
+		width: auto;
+		float: none;
+	}
+	#middle {
+		width: auto;
+		float: none;
+		margin-left: 0px;
+	}
+	#sidebar {
+		width: auto;
+		float: none;
+	}
+}
+
+/* for 480px or less */
+@media screen and (max-width: 480px) {
+	header {
+		height: auto;
+	}
+	h1 {
+		font-size: 2em;
+	}
+	#sidebar {
+		display: none;
+	}
+}
+
+#content {
+	
+}
+
+#sidebar {
+	
+}
+
+header, #content, #middle, #sidebar {
+	margin-bottom: 5px;
+}
+
+#pagewrap, #content, #middle, #sidebar, footer {
+	
+}
